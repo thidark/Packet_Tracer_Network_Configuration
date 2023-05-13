@@ -1,0 +1,31 @@
+Router0(config)#router rip
+Router0(config-router)#version 2
+Router0(config-router)#network 192.168.1.0
+Router0(config-router)#network 192.168.2.0
+
+Router1(config)#router rip
+Router1(config-router)#version 2
+Router1(config-router)#network 192.168.0.0
+Router1(config-router)#network 192.168.1.0
+Router1(config-router)#network 192.168.4.0
+Router1(config-router)#network 192.168.7.0
+
+Router2(config)#router rip
+Router2(config-router)#version 2
+Router2(config-router)#network 192.168.2.0
+Router2(config-router)#network 192.168.3.0
+Router2(config-router)#network 192.168.6.0
+Router2(config-router)#network 192.168.7.0
+
+
+Router3(config)#router rip
+Router3(config-router)#version 2
+Router3(config-router)#network 192.168.4.0
+Router3(config-router)#network 192.168.5.0
+
+
+Router4(config)#router rip
+Router4(config-router)#version 2
+Router4(config-router)#network 192.168.5.0
+Router4(config-router)#network 192.168.6.0
+

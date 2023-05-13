@@ -1,0 +1,25 @@
+Router0(config)#router ospf 1
+Router0(config-router)#network 192.168.1.0 0.0.0.255 area 0
+Router0(config-router)#network 192.168.2.0 0.0.0.255 area 0
+
+Router1(config)#router ospf 1
+Router1(config-router)#network 192.168.0.0 0.0.0.255 area 0
+Router1(config-router)#network 192.168.1.0 0.0.0.255 area 0
+Router1(config-router)#network 192.168.4.0 0.0.0.255 area 0
+Router1(config-router)#network 192.168.7.0 0.0.0.255 area 0
+
+Router2(config)#router ospf 1
+Router2(config-router)#network 192.168.2.0 0.0.0.255 area 0
+Router2(config-router)#network 192.168.3.0 0.0.0.255 area 0
+Router2(config-router)#network 192.168.6.0 0.0.0.255 area 0
+Router2(config-router)#network 192.168.7.0 0.0.0.255 area 0
+
+Router3(config)#router ospf 1
+Router3(config-router)#network 192.168.4.0 0.0.0.255 area 0
+Router3(config-router)#network 192.168.5.0 0.0.0.255 area 0
+
+Router4(config)#router ospf 1
+Router4(config-router)#network 192.168.5.0 0.0.0.255 area 0
+Router4(config-router)#network 192.168.6.0 0.0.0.255 area 0
+
+
